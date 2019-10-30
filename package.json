@@ -8,16 +8,12 @@
   "license": "ISC",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "jest --coverage",
-    "run": "appium"
+    "start": "jest --coverage"
   },
   "devDependencies": {
-    "appium": "^1.15.1",
-    "appium-doctor": "^1.12.1",
     "jest": "^24.9.0",
     "jest-html-reporters": "^1.1.8",
     "jest-puppeteer": "^4.3.0",
-    "puppeteer": "^1.19.0",
-    "wd": "^1.11.4"
+    "puppeteer": "^1.19.0"
   }
 }
