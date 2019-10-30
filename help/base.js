@@ -65,14 +65,6 @@ const screenshot = async () => {
  * @param {*} Time 等待时间
  */
 const waitForElement = async (Element, Time = 5) => {
-    // var number = Time * 4   //思路：用For循环，每250毫秒查看一下页面有没有Element，1S = 4 * 250MS,所以number = Time * 4
-    // for (let i = 0; i <= number; i++) {
-    //     await page.waitFor(250);
-    //     if (await page.$(Element)) {
-    //         return true
-    //     }
-    // }
-    // return false
     Time = Time * 1000
     try {
         await page.waitForSelector(Element, { timeout: Time })
